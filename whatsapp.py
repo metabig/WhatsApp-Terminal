@@ -30,7 +30,7 @@ def orderContacts(contacts):
 
 def loadWhatsApp():
     options = Options()
-    options.add_argument('user-data-dir=/home/metabig/projectX/User_Data')
+    options.add_argument('user-data-dir=./User_Data')
     driver = webdriver.Chrome('./chromedriver', chrome_options=options)
     driver.implicitly_wait(15)
     driver.get('https://web.whatsapp.com/')
